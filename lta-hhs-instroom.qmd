@@ -8,15 +8,17 @@ lang: nl
 date: last-modified
 date-format: "DD-MM-YYYY"
 
+## Format en output
 format: 
   pdf: default 
+cite-method: biblatex
 template: 00_Templates/eisvogel-lta.latex
 number-sections: true
 number-depth: 3
 listings: true
 output-file: lta-instroomanalyse-b-com_0.9.pdf
-#latex-output-dir: 05_Output
 
+## Titlepage
 titlepage: true,
 titlepage-rule-color: 'FFFFFF'
 titlepage-text-color: '223343'
@@ -25,25 +27,31 @@ titlepage-subtitle-color: '9EA700'
 titlepage-footer-color: 'FFFFFF'
 titlepage-background: "01_Backgrounds/LTA-standingman.pdf"
 
+## Toc
 toc: true
 toc-depth: 2
 toc-own-page: true
 
+## Tables en callouts
 table-use-row-colors: false
 callout-appearance: simple
 
+## Footnotes en literatuur
 footnotes-pretty: true
 link-citations: true
-bibliography: 03_Bibliography/lta-bibliography-instroom.bib
-csl: 04_Styles/apa.csl
-citeproc: true
+bibliography: lta-bibliography-instroom.bib
+biblio-title: "Literatuur"
+biblio-style: apa
+citeproc: false
 
+## Links en cross referenties
 colorlinks: true
 crossref:
   fig-title: Figuur    # (default is "Figure")
   tbl-title: Tabel     # (default is "Table")
   ref-hyperlink: true # (default is true)
 
+## editor
 editor: visual
 
 # Document met variabelen voor dit document
@@ -109,8 +117,8 @@ Amsterdam, {{< meta date >}}
     Mogelijk dat beide gebeurtenissen van invloed zijn geweest op de
     instroom. Zie @fig-plot-001, @fig-plot-002 en @fig-plot-003.
 2.  **Regionale spreiding** - Kenmerkend is dat studenten voor deze
-    opleiding overwegend uit de nabije regio komen: te bereiken met het
-    openbaar vervoer in de spits in 45 minuten. Zie @fig-plot-100.
+    opleiding overwegend uit de regio komen: te bereiken met het
+    openbaar vervoer in de spits in 45 minuten. In 2012 was dit nog uit Den Haag zelf, maar in 2021 is vrijwel niet meer het geval. Zie @fig-plot-spreiding-2012 en @fig-plot-spreiding-2021.
 7.  **Landelijke trends** - Landelijk is er sprake van een daling in het
     domein Economie en bij de B Communicatie voor voltijd eerstejaars
     studenten; het is nog onduidelijk of de B Communicatie van De HHs
@@ -168,7 +176,7 @@ conversie, voorlichting, scholenbezoek en interne concurrentie.
 3.  **Herstel het scholenbezoek** -- Het contact met de vooropleidingen
     lijkt sinds het afschaffen van de scholenbezoeken verbroken. Herstel
     van dit contact lijkt van cruciaal belang om de opleiding weer op de
-    kaart te zetten. Zie bijlage 2 voor een overzicht.
+    kaart te zetten. Dat het contact met de nabije regio is verloren blijkt ook uit het spreidingsonderzoek. De instroom uit Den Haag in 2021 is vergeleken met 2012 minimaal.
 4.  **Neem het curriculum onder de loep** -- De studenten krijgen veel
     tijd voor zelfstudie. Dit is voor de studenten die structuur nodig
     hebben lastig. Daarom het advies om het curriculum kritisch te
@@ -244,11 +252,16 @@ voorgaand jaar](02_Plots/mo-b_communicatie-p003.png){#fig-plot-003}
 
 Het toeleveringsgebied van de opleiding beperkt zich tot de nabije regio
 van de locatie Johanna Westerdijkplein: te bereiken met het openbaar
-vervoer in de spits in 45 minuten. De meeste studenten komen uit de
-directe omgeving.
+vervoer in de spits in 45 minuten. De meeste studenten kwamen in 2012 nog uit de
+directe omgeving, maar in 2021 is dit niet langer het geval.
 
 ![Spreidingsgebied B Communicatie \|
-2012](02_Plots/Instroom-B-Communicatie-2012.png){#fig-plot-100}
+2012](02_Plots/Instroom-B-Communicatie-2012.png){#fig-plot-spreiding-2012}
+
+\newpage
+
+![Spreidingsgebied B Communicatie \|
+2021](02_Plots/Instroom-B-Communicatie-2021.png){#fig-plot-spreiding-2021}
 
 \newpage
 
@@ -320,11 +333,6 @@ en de Ad Facility Management.
 ![Ontwikkeling instroom overige opleidingen
 M&O](02_Plots/mo-b_communicatie-p007_annotated.png){#fig-plot-007}
 
-```{=html}
-<!---
-ONTWIKKELINGEN NAAR GESLACHT
---->
-```
 \newpage
 
 ## Ontwikkeling naar geslacht
@@ -498,8 +506,13 @@ instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig-plot-012-3}
     hebben op de instroom. Het zal interessant zijn dit nader te
     onderzoeken.
 
-::: {#refs}
-# Referenties
+\newpage
+
+# Literatuur {.unnumbered}
+::: {.content-visible when-format="pdf"}
+
+\printbibliography[heading=none]
+
 :::
 
 \newpage

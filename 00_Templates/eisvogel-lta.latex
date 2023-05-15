@@ -1087,7 +1087,7 @@ $if(beamer)$
   \printbibliography[heading=none]
 \end{frame}
 $else$
-\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+% TB: uitgecomment. \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
 $endif$
 
 $endif$
