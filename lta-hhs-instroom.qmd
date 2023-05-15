@@ -16,7 +16,7 @@ template: 00_Templates/eisvogel-lta.latex
 number-sections: true
 number-depth: 3
 listings: true
-output-file: lta-instroomanalyse-b-com_0.9.pdf
+output-file: lta-instroomanalyse-b-com_0.9.1.pdf
 
 ## Titlepage
 titlepage: true,
@@ -496,13 +496,10 @@ instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig-plot-012-3}
 
 # Mogelijk vervolgonderzoek
 
--   *Geografische spreiding van de instroom*. Dit onderdeel brengt in
-    kaart waar de studenten vandaan komen. Dit is nog niet klaar, maar
-    zal in een volgende versie worden meegenomen.
 -   *Uitval*. Welke patronen zien we in de uitval en kunnen we die
     relateren in patronen in de instroom. Dit vervolgonderzoek is
     inmiddels in de maak.
--   *Wiskunde-eis*. De afschaffing van de wiskunde eis kan een effect
+-   *Wiskunde-eis*. De afschaffing van de wiskunde-eis kan een effect
     hebben op de instroom. Het zal interessant zijn dit nader te
     onderzoeken.
 
