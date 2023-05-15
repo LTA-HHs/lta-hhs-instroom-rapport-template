@@ -15,7 +15,7 @@ number-sections: true
 number-depth: 3
 listings: true
 output-file: lta-instroomanalyse-b-com_0.9.pdf
-latex-output-dir: 05_Output
+#latex-output-dir: 05_Output
 
 titlepage: true,
 titlepage-rule-color: 'FFFFFF'
@@ -29,7 +29,6 @@ toc: true
 toc-depth: 2
 toc-own-page: true
 
-colorlinks: true
 table-use-row-colors: false
 callout-appearance: simple
 
@@ -39,7 +38,16 @@ bibliography: 03_Bibliography/lta-bibliography-instroom.bib
 csl: 04_Styles/apa.csl
 citeproc: true
 
+colorlinks: true
+crossref:
+  fig-title: Figuur    # (default is "Figure")
+  tbl-title: Tabel     # (default is "Table")
+  ref-hyperlink: true # (default is true)
+
 editor: visual
+
+# Document met variabelen voor dit document
+versie: 0.9.1
 ---
 
 # Inleiding
@@ -84,8 +92,7 @@ bevindingen over de gehele faculteit.
 :::
 
 \
-**Rapport**: {{< meta title >}}, {{< meta subtitle >}}, versie
-{{< var versie >}}
+**Rapport**: {{< meta title >}}, {{< meta subtitle >}}, versie {{< meta versie >}}
 
 Amsterdam, {{< meta date >}}
 
@@ -100,42 +107,37 @@ Amsterdam, {{< meta date >}}
     opleiding op standaard 16 (het eindniveau) 'Onvoldoende' beoordeeld
     en na het hersteltraject in 2016 met 'Voldoende' beoordeeld.
     Mogelijk dat beide gebeurtenissen van invloed zijn geweest op de
-    instroom. Zie [figuur 1](#fig:plot_001), [figuur 2](#fig:plot_002)
-    en [figuur 3](#fig:plot_003).
-2.  **Landelijke trends** - Landelijk is er sprake van een daling in het
+    instroom. Zie @fig-plot-001, @fig-plot-002 en @fig-plot-003.
+2.  **Regionale spreiding** - Kenmerkend is dat studenten voor deze
+    opleiding overwegend uit de nabije regio komen: te bereiken met het
+    openbaar vervoer in de spits in 45 minuten. Zie @fig-plot-100.
+7.  **Landelijke trends** - Landelijk is er sprake van een daling in het
     domein Economie en bij de B Communicatie voor voltijd eerstejaars
     studenten; het is nog onduidelijk of de B Communicatie van De HHs
     sterker daalt dan andere opleidingen. Dit lijkt vanuit interne
     cijfers wel het geval te zijn, maar dit is niet het geval volgens de
-    VH-cijfers. Zie [figuur 4](#fig:vh_001) en [figuur 5](#fig:vh_002).
+    VH-cijfers. Zie @fig-vh-001 en @fig-vh-002.
 3.  **Trend binnen M&O** - Er is een gelijke instroomtrend te zien bij 3
     andere opleidingen van de faculteit: B Human Resource Management, B
-    Facility Management en B Bedrijfskunde. Zie [figuur
-    6](#fig:plot_007).
+    Facility Management en B Bedrijfskunde. Zie @fig-plot-007.
 4.  **Vrouw-man verdeling** - Het aandeel mannen is al eerder gedaald
     dan het aandeel vrouwen. De verhouding man/vrouw is varieert tussen
-    de 25%/75% en 30%/70%. Zie [figuur 7](#fig:plot_004) en [figuur
-    8](#fig:plot_005).
+    de 25%/75% en 30%/70%. Zie @fig-plot-004 en @fig-plot-005.
 5.  **Vooropleiding** - Met name het aandeel instroom vanuit havo en mbo
     is sterk gedaald. De top 10 scholen zijn -- zowel in mbo als havo --
-    drastisch gedaald. Zie [figuur 9](#fig:plot_006) en [figuur
-    10](#fig:plot_009.1).
-6.  **Regionale spreiding** - Kenmerkend is dat studenten voor deze
-    opleiding overwegend uit de nabije regio komen: te bereiken met het
-    openbaar vervoer in de spits in 45 minuten. *Grafiek volgt*
-7.  **Conversie** - De conversie van geïnteresseerden voor de opleiding
+    drastisch gedaald. Zie @fig-plot-006 en @fig-plot-009-1.
+6.  **Conversie** - De conversie van geïnteresseerden voor de opleiding
     is zeer laag (2,8% vergeleken met 6% in de faculteit). Studenten
     kiezen nog breed en het kan zijn dat de keuze voor de opleiding een
     non-keuze is: uit onzekerheid. Dit zou kunnen leiden tot
     tegenvallende ervaringen en hoge uitval. Dit is onderwerp voor een
-    vervolgonderzoek. Zie tabel 1.
+    vervolgonderzoek. Zie @tbl-crm.
 8.  **Directe instroom versus switch** - Het aandeel indirecte instroom
     (switch en tussenjaar) is hoog in deze opleiding. Dit kan duiden op
     onzekerheid over de studiekeuze. Het is van belang hier aandacht aan
     te besteden in de studiekeuze en onboarding. In het vervolgonderzoek
     naar uitval zal meegenomen worden wat het succes is van deze
-    studenten. Zie [figuur 13](#fig:plot_012.1), [figuur
-    14](#fig:plot_012.2) en [figuur 15](#fig:plot_012.3).
+    studenten. Zie @fig-plot-012-1, @fig-plot-012-2 en @fig-plot-012-3.
 
 \newpage
 
@@ -226,17 +228,27 @@ gebeurtenissen van invloed zijn geweest op de instroom.
 <!-- todo: plot 1 en 2 combineren -->
 
 ![Ontwikkeling instroom in
-aantallen](02_Plots/mo-b_communicatie-p001.png){#fig:plot_001}
+aantallen](02_Plots/mo-b_communicatie-p001.png){#fig-plot-001}
 
 \newpage
 
 ![Ontwikkeling instroom in percentages per jaar vergeleken met het
-eerste jaar](02_Plots/mo-b_communicatie-p002.png){#fig:plot_002}
+eerste jaar](02_Plots/mo-b_communicatie-p002.png){#fig-plot-002}
+
+![Ontwikkeling instroom in percentages per jaar vergeleken met het
+voorgaand jaar](02_Plots/mo-b_communicatie-p003.png){#fig-plot-003}
 
 \newpage
 
-![Ontwikkeling instroom in percentages per jaar vergeleken met het
-voorafgaande jaar](02_Plots/mo-b_communicatie-p003.png){#fig:plot_003}
+## Regionale spreiding
+
+Het toeleveringsgebied van de opleiding beperkt zich tot de nabije regio
+van de locatie Johanna Westerdijkplein: te bereiken met het openbaar
+vervoer in de spits in 45 minuten. De meeste studenten komen uit de
+directe omgeving.
+
+![Spreidingsgebied B Communicatie \|
+2012](02_Plots/Instroom-B-Communicatie-2012.png){#fig-plot-100}
 
 \newpage
 
@@ -284,14 +296,14 @@ voorafgaande jaar](02_Plots/mo-b_communicatie-p003.png){#fig:plot_003}
 \newpage
 
 ![Instroom sector economie 2017-2022 - landelijk - voltijd \|
-bachelor](02_Images/image-1377971909.png){#fig:vh_001}
+bachelor](02_Images/image-1377971909.png){#fig-vh-001}
 
 NB: Dit is een screenshot van de VH. De ondertitel kan genegeerd worden.
 
 \newpage
 
 ![Instroom sector economie 2017-2022 - De HHs - voltijd \|
-bachelor](02_Images/image-1032386929.png){#fig:vh_002}
+bachelor](02_Images/image-1032386929.png){#fig-vh-002}
 
 NB: Dit is een screenshot van de VH. De ondertitel kan genegeerd worden.
 
@@ -306,7 +318,7 @@ opleidingen van de faculteit, met uitzondering van de B European Studies
 en de Ad Facility Management.
 
 ![Ontwikkeling instroom overige opleidingen
-M&O](02_Plots/mo-b_communicatie-p007_annotated.png){#fig:plot_007}
+M&O](02_Plots/mo-b_communicatie-p007_annotated.png){#fig-plot-007}
 
 ```{=html}
 <!---
@@ -324,12 +336,12 @@ stabiliseren maar zet de daling onder vrouwen voort. Het aandeel mannen
 varieert tussen 25-30%.
 
 ![Ontwikkeling instroom in aantallen per
-geslacht](02_Plots/mo-b_communicatie-p004.png){#fig:plot_004}
+geslacht](02_Plots/mo-b_communicatie-p004.png){#fig-plot-004}
 
 \newpage
 
 ![Ontwikkeling instroom in percentages per
-geslacht](02_Plots/mo-b_communicatie-p005.png)
+geslacht](02_Plots/mo-b_communicatie-p005.png){#fig-plot-005}
 
 \newpage
 
@@ -340,7 +352,7 @@ en havo. Overige toelaatgevende vooropleidingen hebben een zeer beperkt
 aandeel in de instroom.
 
 ![Ontwikkeling instroom naar
-vooropleiding](02_Plots/mo-b_communicatie-p006.png){#fig:plot_006}
+vooropleiding](02_Plots/mo-b_communicatie-p006.png){#fig-plot-006}
 
 In 2016[^2] zijn zowel uitgaande als inkomende scholenbezoeken door De
 HHs afgeschaft. Mogelijk dat dit een effect heeft gehad op de instroom
@@ -361,7 +373,7 @@ scholen om te achterhalen wat de dynamiek kan verklaren in de afgelopen
 jaren.
 
 ![Ontwikkeling rangorde van top-5
-mbo-scholen](02_Plots/mo-b_communicatie-p009.1.png){#fig:plot_009.1}
+mbo-scholen](02_Plots/mo-b_communicatie-p009.1.png){#fig-plot-009-1}
 
 \newpage
 
@@ -376,12 +388,12 @@ onzekerheid over de studiekeuze; hier dient extra aandacht aan besteed
 te worden in de voorlichting en onboarding.
 
 ![Ontwikkeling directe en indirecte instroom in
-aantallen](02_Plots/mo-b_communicatie-p011.1.png){#fig:plot_011.1}
+aantallen](02_Plots/mo-b_communicatie-p011.1.png){#fig-plot-011.1}
 
 \newpage
 
 ![Ontwikkeling directe en indirecte instroom in
-percentages](02_Plots/mo-b_communicatie-p011.2.png){#fig:plot_011.2}
+percentages](02_Plots/mo-b_communicatie-p011.2.png){#fig-plot-011.2}
 
 \newpage
 
@@ -416,7 +428,7 @@ activiteit: open dag, proefstuderen, meelopen d.d. 19-03-2023.
 | Gemiddeld aantal opleidingen op een open dag | 4,4   | 4,8            |
 
 : Conversie van CRM activiteiten naar aanmeldingen; vergelijking M&O en
-B Communicatie
+B Communicatie {#tbl-crm}
 
 \newpage
 
@@ -435,7 +447,7 @@ B Communicatie
     lijkt meer te spelen bij mannen dan bij vrouwen.
 
 ![Aanmeldpatroon naar
-geslacht](02_Plots/mo-b_communicatie-p012.1.png){#fig:plot_012.1}
+geslacht](02_Plots/mo-b_communicatie-p012.1.png){#fig-plot-012-1}
 
 \newpage
 
@@ -446,7 +458,7 @@ geslacht](02_Plots/mo-b_communicatie-p012.1.png){#fig:plot_012.1}
     dat in 2020 niet het geval.
 
 ![Aanmeldpatroon naar
-vooropleiding](02_Plots/mo-b_communicatie-p012.2.png){#fig:plot_012.2}
+vooropleiding](02_Plots/mo-b_communicatie-p012.2.png){#fig-plot-012-2}
 
 \newpage
 
@@ -470,7 +482,7 @@ vooropleiding](02_Plots/mo-b_communicatie-p012.2.png){#fig:plot_012.2}
 \newpage
 
 ![Aanmeldpatroon naar directe of indirecte
-instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig:plot_012.3}
+instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig-plot-012-3}
 
 \newpage
 
