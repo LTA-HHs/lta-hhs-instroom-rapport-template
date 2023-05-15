@@ -1,0 +1,522 @@
+---
+subject: Instroomanalyse B Communicatie HHs
+title: "Instroomanalyse B Communicatie HHs"
+subtitle: "Voltijd eerstejaars studenten -- cohorten 2012 tot en met 2021"
+author: "Lectoraat Learning Technology & Analytics, De HHs"
+keywords: [De HHs, De Staat van De Haagse, Instroomanalyse]
+lang: nl
+date: last-modified
+date-format: "DD-MM-YYYY"
+
+format: 
+  pdf: default 
+template: 00_Templates/eisvogel-lta.latex
+number-sections: true
+number-depth: 3
+listings: true
+output-file: lta-instroomanalyse-b-com_0.9.pdf
+latex-output-dir: 05_Output
+
+titlepage: true,
+titlepage-rule-color: 'FFFFFF'
+titlepage-text-color: '223343'
+titlepage-title-color: '223343'
+titlepage-subtitle-color: '9EA700'
+titlepage-footer-color: 'FFFFFF'
+titlepage-background: "01_Backgrounds/LTA-standingman.pdf"
+
+toc: true
+toc-depth: 2
+toc-own-page: true
+
+colorlinks: true
+table-use-row-colors: false
+callout-appearance: simple
+
+footnotes-pretty: true
+link-citations: true
+bibliography: 03_Bibliography/lta-bibliography-instroom.bib
+csl: 04_Styles/apa.csl
+citeproc: true
+
+editor: visual
+---
+
+# Inleiding
+
+## Het vraagstuk: dalende instroom
+
+Op verzoek van de directeur M&O heeft het lectoraat Learning Technology
+& Analytics samen met de faculteit een analyse uitgevoerd op de instroom
+van de opleiding B Communicatie van De Haagse Hogeschool. Sinds 2012 is
+de instroom van de opleiding namelijk sterk afgenomen (met 66%) en de
+faculteit en de opleiding willen het tij keren.
+
+## Verantwoording
+
+Dit onderzoek is uitgevoerd door Theo Bakker, lector Learning Technology
+& Analytics, en Monique Deleu, BAK-medewerker faculteit M&O. Voor dit
+onderzoek is de analyseset van het project Studiedata gebruikt van het
+team IR & Analytics van OKC. Daarnaast is de landelijke data van de
+Vereniging Hogescholen onderzocht voor een vergelijking met andere
+opleidingen in Nederland.
+
+## Selecties
+
+-   Eerstejaars studenten, voltijd, B Communicatie, track CO (= COM),
+    cohorten 2012 tot en met 2021[^1]. Nota bene: De track ICM is dus
+    niet meegenomen.
+-   Eerstejaars studenten, voltijd, overige opleidingen faculteit M&O,
+    cohorten 2012 tot en met 2021.
+
+[^1]: De dataset van HHs Analytics loopt tot en met 2021, aangezien deze
+    is gebaseerd op de 1CHO bestanden die vanaf het voorjaar ter
+    beschikking komen. Het
+    [1CHO](https://duo.nl/zakelijk/hoger-onderwijs/studentenadministratie/bron-controleren/deelnames-en-resultaten-duo-registers.jsp)
+    staat voor 1 cijfer HO van de Dienst Uitvoering Onderwijs; het zijn
+    alle deelnames en resultaten van studenten in het hoger onderwijs,
+    vanaf 1991 tot en met 1 oktober van het afgelopen jaar.
+
+::: {.callout-warning title="Nota Bene"}
+Van de opleiding B Bedrijfskunde ontbreken nog de gegevens over de
+cohorten 2012 tot en met 2017. Dit is mogelijk van invloed op de
+bevindingen over de gehele faculteit.
+:::
+
+\
+**Rapport**: {{< meta title >}}, {{< meta subtitle >}}, versie
+{{< var versie >}}
+
+Amsterdam, {{< meta date >}}
+
+\newpage
+
+# Opvallende uitkomsten uit de analyses op instroom, oriëntatie en context
+
+1.  **Patroon in instroom** - Het aantal studenten is van 2012 tot en
+    met 2021 met 66% gedaald, maar niet alle jaren was er sprake van een
+    daling. De sterkste dalingen waren er in 2015 (-49%) en 2021 (-31%).
+    Opvallend is daarnaast een stijging in 2016 (+90%). In 2013 is de
+    opleiding op standaard 16 (het eindniveau) 'Onvoldoende' beoordeeld
+    en na het hersteltraject in 2016 met 'Voldoende' beoordeeld.
+    Mogelijk dat beide gebeurtenissen van invloed zijn geweest op de
+    instroom. Zie [figuur 1](#fig:plot_001), [figuur 2](#fig:plot_002)
+    en [figuur 3](#fig:plot_003).
+2.  **Landelijke trends** - Landelijk is er sprake van een daling in het
+    domein Economie en bij de B Communicatie voor voltijd eerstejaars
+    studenten; het is nog onduidelijk of de B Communicatie van De HHs
+    sterker daalt dan andere opleidingen. Dit lijkt vanuit interne
+    cijfers wel het geval te zijn, maar dit is niet het geval volgens de
+    VH-cijfers. Zie [figuur 4](#fig:vh_001) en [figuur 5](#fig:vh_002).
+3.  **Trend binnen M&O** - Er is een gelijke instroomtrend te zien bij 3
+    andere opleidingen van de faculteit: B Human Resource Management, B
+    Facility Management en B Bedrijfskunde. Zie [figuur
+    6](#fig:plot_007).
+4.  **Vrouw-man verdeling** - Het aandeel mannen is al eerder gedaald
+    dan het aandeel vrouwen. De verhouding man/vrouw is varieert tussen
+    de 25%/75% en 30%/70%. Zie [figuur 7](#fig:plot_004) en [figuur
+    8](#fig:plot_005).
+5.  **Vooropleiding** - Met name het aandeel instroom vanuit havo en mbo
+    is sterk gedaald. De top 10 scholen zijn -- zowel in mbo als havo --
+    drastisch gedaald. Zie [figuur 9](#fig:plot_006) en [figuur
+    10](#fig:plot_009.1).
+6.  **Regionale spreiding** - Kenmerkend is dat studenten voor deze
+    opleiding overwegend uit de nabije regio komen: te bereiken met het
+    openbaar vervoer in de spits in 45 minuten. *Grafiek volgt*
+7.  **Conversie** - De conversie van geïnteresseerden voor de opleiding
+    is zeer laag (2,8% vergeleken met 6% in de faculteit). Studenten
+    kiezen nog breed en het kan zijn dat de keuze voor de opleiding een
+    non-keuze is: uit onzekerheid. Dit zou kunnen leiden tot
+    tegenvallende ervaringen en hoge uitval. Dit is onderwerp voor een
+    vervolgonderzoek. Zie tabel 1.
+8.  **Directe instroom versus switch** - Het aandeel indirecte instroom
+    (switch en tussenjaar) is hoog in deze opleiding. Dit kan duiden op
+    onzekerheid over de studiekeuze. Het is van belang hier aandacht aan
+    te besteden in de studiekeuze en onboarding. In het vervolgonderzoek
+    naar uitval zal meegenomen worden wat het succes is van deze
+    studenten. Zie [figuur 13](#fig:plot_012.1), [figuur
+    14](#fig:plot_012.2) en [figuur 15](#fig:plot_012.3).
+
+\newpage
+
+# Conclusies & aanbevelingen
+
+De aanbevelingen richten zich op profilering c.q. curriculum, naar
+conversie, voorlichting, scholenbezoek en interne concurrentie.
+
+1.  **Ontwikkel een duidelijke, aantrekkelijke profilering** - De
+    opleiding heeft nu geen duidelijk gezicht in de regio en is daarmee
+    onvoldoende onderscheidend en aantrekkelijk, zeker ten opzichte van
+    concurrerende opleidingen. De keuze voor publieke communicatie sluit
+    waarschijnlijk minder goed aan bij de doelgroep. Een heroverweging
+    van de profilering en het curriculum is van belang; een goed
+    voorbeeld is de B Commerciële Economie. Ook binnen de brede bachelor
+    M&O is het van belang dat de B Communicatie en eigen positie heeft.
+2.  **Wijs een medewerker toe die zich richt op persoonlijke opvolging
+    van de werving** - De werving kent onvoldoende eigenaarschap: het
+    mist aan een coördinator die er voldoende tijd en aandacht aan heeft
+    om studenten persoonlijk na te bellen. Een *best practice* is
+    hiervoor opnieuw de aanpak van de B Commerciële Economie onder
+    leiding van Luc Beurskens. Van belang is dat deze persoon ook het
+    draagvlak in de opleiding weet te mobiliseren. Ongeveer 3 jaar terug
+    had COM een coördinator voor publicatie van de opleiding. Er werd
+    veel geïnvesteerd in voorlichting. Posters werden gemaakt en veel
+    tijd ging naar open dagen en ontwerp van de website. Deze
+    investering werd terugbetaald in een hogere instroom.
+3.  **Herstel het scholenbezoek** -- Het contact met de vooropleidingen
+    lijkt sinds het afschaffen van de scholenbezoeken verbroken. Herstel
+    van dit contact lijkt van cruciaal belang om de opleiding weer op de
+    kaart te zetten. Zie bijlage 2 voor een overzicht.
+4.  **Neem het curriculum onder de loep** -- De studenten krijgen veel
+    tijd voor zelfstudie. Dit is voor de studenten die structuur nodig
+    hebben lastig. Daarom het advies om het curriculum kritisch te
+    bekijken en waar mogelijk meer contacttijd in te bouwen.\
+    Ook is een curriculum met kleinere onderwijseenheden binnen de
+    kaders van De HHS met minder studiepunten aantrekkelijker voor
+    studenten. In een korte tijd succes hebben houdt studenten
+    gemotiveerd. Houd hierbij een minimum aan van 5EC en maximaal 2
+    opdrachten parallel. Zie [@Berkel:2012] hoofdstuk 9. Te veel kleine
+    vakken verhoogt juist de kans deze niet te halen.
+5.  **Plan voor de langere termijn, maar stel niet uit wat er nu al
+    mogelijk is** -- Doe wat er al op korte termijn kan aan verhoging
+    van de conversie en bouw vervolgens vanuit een aangepaste
+    profilering en conversie de werving opnieuw op, gericht op aandacht
+    voor aankomende studenten en herstel van de relatie met toeleverende
+    scholen.
+6.  **Scherp de voorlichting over de studiekeuze aan voor en na de
+    studie** -- Besteed extra aandacht in de voorlichting na 1 mei aan
+    het onderwerp 'studiekeuze', maar ook direct na de start van de
+    studie in de studieloopbaanbegeleiding. In deze opleiding
+    bevindingen zich veel studenten die nog onzeker zijn over hun keuze.
+    In de eerste weken van de studie komt eventuele twijfel sterker naar
+    voren en kan het beste direct geadresseerd worden [@Festinger:1957].
+    Waarschijnlijk speelt dit het sterkst bij mannelijke studenten die
+    zich na 1 mei hebben aangemeld en studenten die zijn geswitcht of
+    een tussenjaar hebben gehad.
+7.  **Onderzoek interne concurrentie** -- Door herprofilering van andere
+    opleidingen van De HHs is het aannemelijk dat de instroom van B
+    Communicatie verder wordt ingeperkt. Dit lijkt met name van
+    toepassing op de opleiding B Commerciële Economie, waar onlangs
+    sterk wordt geprofileerd op het profiel Sociale Media. Ook dient er
+    rekening gehouden te worden met het bredere M&O profiel in
+    oprichting voor een gedeeld bachelorjaar. Het is van belang deze
+    twee onderwerpen nader te onderzoeken.
+8.  **Ontwikkel een marketingplan** -- Voor een eventuele herprofilering
+    is het raadzaam een nader marktonderzoek te doen met behulp van OKC,
+    team Marketing & Communicatie. Team M&C heeft aangeboden een
+    marketingplan te leveren dat aansluit bij de kwantitatieve en
+    kwalitatieve instroomdoelen van de opleiding voor de komende jaren.
+
+\newpage
+
+# Ontwikkeling instroom
+
+## Algemeen beeld
+
+Sinds 2012 is de instroom van de opleiding met 66% afgenomen. In de
+jaren 2015 en 2016 zien we een sterke variatie die mogelijk samenhangt
+met de beoordeling van de opleiding door de onderwijsinspectie.
+
+De sterkste dalingen waren er in 2015 (-49%) en 2021 (-31%). Opvallend
+is daarnaast een stijging in 2016 (+90%). In 2013 is de opleiding op
+standaard 16 (het eindniveau) 'Onvoldoende' beoordeeld en na het
+hersteltraject in 2016 met 'Voldoende' beoordeeld. Mogelijk dat beide
+gebeurtenissen van invloed zijn geweest op de instroom.
+
+<!-- todo: plot 1 en 2 combineren -->
+
+![Ontwikkeling instroom in
+aantallen](02_Plots/mo-b_communicatie-p001.png){#fig:plot_001}
+
+\newpage
+
+![Ontwikkeling instroom in percentages per jaar vergeleken met het
+eerste jaar](02_Plots/mo-b_communicatie-p002.png){#fig:plot_002}
+
+\newpage
+
+![Ontwikkeling instroom in percentages per jaar vergeleken met het
+voorafgaande jaar](02_Plots/mo-b_communicatie-p003.png){#fig:plot_003}
+
+\newpage
+
+## Landelijke ontwikkelingen
+
+**Samenvatting**
+
+-   Landelijk is er tussen 2017 en 2022 sprake van een **drievoudige
+    krimp**. Het totaal aantal hbo studenten is afgenomen met 8%,
+    daarbinnen neemt de sector economie een kleiner aandeel in (-1%) en
+    daarbinnen neemt het aandeel van de opleiding B Communicatie ook af
+    (-1%).
+
+**Onderbouwing**
+
+-   De opleiding valt in het landelijke domein Economie. Landelijk is er
+    sprake van een daling in domein en bij de B Communicatie voor
+    voltijd eerstejaars studenten. Het is nog onduidelijk of de B
+    Communicatie van De HHs sterker daalt dan andere opleidingen. Dit
+    lijkt vanuit interne cijfers van De HHs wel het geval te zijn, maar
+    dit is niet het geval volgens de VH-cijfers.
+
+-   Tussen 2017 en 2022 is het aantal studenten dat landelijk is
+    ingestroomd als eerstejaars in een voltijd bacheloropleiding in het
+    hbo gedaald van 89.669 naar 82.478 (-8%) (Bron: VH, 14-03-2023).
+
+-   Tussen 2017 en 2022 is het aantal studenten dat landelijk is
+    ingestroomd als eerstejaars in de sector economie in een voltijd
+    bacheloropleiding gedaald van 34.956 naar 31.291 (-10%). Het aandeel
+    van de sector economie in het totaal van alles sectoren is
+    teruggelopen van 39% naar 38%. (Bron: VH, 14-03-2023).
+
+-   Voor de opleiding B Communicatie is het aantal studenten dat
+    landelijk als eerstejaars is ingestroomd in de sector economie in
+    een voltijd bacheloropleiding gedaald van 2.012 naar 1.682 (-16%).
+    Het aandeel van de opleiding B Communicatie in de sector economie is
+    teruggelopen van 6% naar 5%. (Bron: VH, 14-03-2023).
+
+-   De wiskunde-eis voor deze opleiding heeft mogelijk parten gespeeld
+    in de instroom; deze eis is onlangs losgelaten. Het is nog te vroeg
+    om te zien of dit een gunstig effect heeft. Nader onderzoek naar de
+    ontwikkeling van de profielkeuzes vanaf cohort 2023 kan hier
+    wellicht meer over zeggen.
+
+\newpage
+
+![Instroom sector economie 2017-2022 - landelijk - voltijd \|
+bachelor](02_Images/image-1377971909.png){#fig:vh_001}
+
+NB: Dit is een screenshot van de VH. De ondertitel kan genegeerd worden.
+
+\newpage
+
+![Instroom sector economie 2017-2022 - De HHs - voltijd \|
+bachelor](02_Images/image-1032386929.png){#fig:vh_002}
+
+NB: Dit is een screenshot van de VH. De ondertitel kan genegeerd worden.
+
+\newpage
+
+## Facultaire ontwikkelingen
+
+De opleiding B Communicatie is niet de enige opleiding die een dalende
+instroom laat zien. De dalende trend is tussen 2012 en 2021 niet alleen
+te zien bij de opleiding B Communicatie, maar ook bij overige
+opleidingen van de faculteit, met uitzondering van de B European Studies
+en de Ad Facility Management.
+
+![Ontwikkeling instroom overige opleidingen
+M&O](02_Plots/mo-b_communicatie-p007_annotated.png){#fig:plot_007}
+
+```{=html}
+<!---
+ONTWIKKELINGEN NAAR GESLACHT
+--->
+```
+\newpage
+
+## Ontwikkeling naar geslacht
+
+Naar verhouding is het aantal mannen eerder gedaald dan het aantal
+vrouwen. Sinds 2012 is het aantal eerstejaars in 2021 met 65% gedaald
+(van 160 naar 55). Sinds 2016 lijkt de daling zich onder mannen wat te
+stabiliseren maar zet de daling onder vrouwen voort. Het aandeel mannen
+varieert tussen 25-30%.
+
+![Ontwikkeling instroom in aantallen per
+geslacht](02_Plots/mo-b_communicatie-p004.png){#fig:plot_004}
+
+\newpage
+
+![Ontwikkeling instroom in percentages per
+geslacht](02_Plots/mo-b_communicatie-p005.png)
+
+\newpage
+
+## Ontwikkeling naar vooropleiding
+
+De daling van de instroom heeft voornamelijk plaatsgevonden in het mbo
+en havo. Overige toelaatgevende vooropleidingen hebben een zeer beperkt
+aandeel in de instroom.
+
+![Ontwikkeling instroom naar
+vooropleiding](02_Plots/mo-b_communicatie-p006.png){#fig:plot_006}
+
+In 2016[^2] zijn zowel uitgaande als inkomende scholenbezoeken door De
+HHs afgeschaft. Mogelijk dat dit een effect heeft gehad op de instroom
+van deze opleiding. Het effect van scholenbezoeken of het wegvallen
+daarvan zal verschillen per opleiding. Het hangt af van de mate waarin
+een opleiding uniek is in de regio of Nederland. De verwachting is dat
+hoe minder uniek een opleiding is, des te belangrijker scholenbezoek is
+voor profilering, zeker als concurrerende opleidingen van andere
+onderwijsinstellingen wel scholenbezoeken organiseren.
+
+[^2]: Dit jaar dient nog gecontroleerd te worden.
+
+De belangrijkste aanwas voor deze opleiding is het mbo. Daarbinnen is er
+sprake van een rangorde bij de top-5 mbo scholen die tussen 2012 en 2021
+heeft gewisseld. Opmerkelijk is de tijdelijke opkomst van het Grafisch
+Lyceum rond 2016. Het verdient aanbeveling contact op te nemen met deze
+scholen om te achterhalen wat de dynamiek kan verklaren in de afgelopen
+jaren.
+
+![Ontwikkeling rangorde van top-5
+mbo-scholen](02_Plots/mo-b_communicatie-p009.1.png){#fig:plot_009.1}
+
+\newpage
+
+## Ontwikkeling naar directe of indirecte instroom
+
+In de instroom maken we een onderscheid tussen directe instroom, direct
+na het behalen van een diploma in de toelaatgevende opleiding, en
+overige instroom na switch of een tussenjaar. Opvallend is het grote
+aandeel van switchers en studenten met een tussenjaar (sinds 2017 meer
+dan 50%). De veronderstelling is dat dit duidt op een grotere
+onzekerheid over de studiekeuze; hier dient extra aandacht aan besteed
+te worden in de voorlichting en onboarding.
+
+![Ontwikkeling directe en indirecte instroom in
+aantallen](02_Plots/mo-b_communicatie-p011.1.png){#fig:plot_011.1}
+
+\newpage
+
+![Ontwikkeling directe en indirecte instroom in
+percentages](02_Plots/mo-b_communicatie-p011.2.png){#fig:plot_011.2}
+
+\newpage
+
+## Oriëntatie- en aanmeldpatronen
+
+### Oriëntatiepatronen
+
+**Bron**: Team Marketing & Communicatie, OKC, CRM (Customer Relationship
+Management systeem; systeem met aanmeldingen voor open dagen, meelopen,
+proefstuderen, etc.).
+
+Opvallende zaken zijn:
+
+-   Ruim 300 studenten liepen in 2022 mee met open dagen; 10% van hen
+    komt proefstuderen.
+-   De opleiding kent een lage conversie van interesse naar aanmelding:
+    2,8% versus 6,0% binnen de rest van de faculteit. Studenten
+    oriënteren zich breed: gemiddeld bezoeken zij 4,5 opleidingen op
+    deze dagen.
+-   De oriëntatie wordt gecombineerd met de opleidingen van de
+    faculteiten ITD en BFM: Communicatie en Multimedia Design, Human
+    Resource Management, Social Work en Commerciële Economie.
+
+**Selectie**: Aanmeldingen voor cohort 2023, gewogen aanmeldingen, type
+activiteit: open dag, proefstuderen, meelopen d.d. 19-03-2023.
+
+|                                              | M&O   | B Communicatie |
+|----------------------------------------------|-------|----------------|
+| Unieke CRM activiteiten                      | 2.224 | 331            |
+| Aanmeldingen met minstens een CRM activiteit | 152   | 9              |
+| Conversie van activiteit naar aanmelding     | 6,9%  | 2,8%           |
+| Gemiddeld aantal opleidingen op een open dag | 4,4   | 4,8            |
+
+: Conversie van CRM activiteiten naar aanmeldingen; vergelijking M&O en
+B Communicatie
+
+\newpage
+
+### Aanmeldpatronen naar geslacht
+
+-   In het aanmeldgedrag zien we een duidelijk verschil tussen mannen en
+    vrouwen. In 2015 is de aanmelddeadline verschoven naar 1 mei (= 123
+    dagen voor 1 september); dit zien we terug in de data.
+-   De helft van de mannen meldt zich sindsdien na 1 mei aan, terwijl
+    bij vrouwen dat slechts een klein deel is.
+-   Een uitzondering hierop was het cohort 2020. Vermoedelijk hing dit
+    samen met de corona maatregelen: doordat de ingangseisen anders
+    waren, wisten studenten al eerder of zij zich konden aanmelden.
+-   Dit impliceert dat studenten met lagere cijfers zich later
+    aanmelden, omdat zij nog niet weten of zij toelaatbaar zijn. Dit
+    lijkt meer te spelen bij mannen dan bij vrouwen.
+
+![Aanmeldpatroon naar
+geslacht](02_Plots/mo-b_communicatie-p012.1.png){#fig:plot_012.1}
+
+\newpage
+
+### Aanmeldpatronen naar toelaatgevende vooropleiding
+
+-   In de vooropleidingsdata zien we een soortgelijk beeld in mindere
+    mate terug. Mbo studenten melden zich vaker later aan. Ook hier was
+    dat in 2020 niet het geval.
+
+![Aanmeldpatroon naar
+vooropleiding](02_Plots/mo-b_communicatie-p012.2.png){#fig:plot_012.2}
+
+\newpage
+
+### Aanmeldpatronen naar directe of indirecte instroom
+
+-   Het sterkste patroon zien we in de aanmelddata naar directe of
+    indirecte instroom. Switchers melden zich het laatst aan.
+    Waarschijnlijk weten zij pas laat in het jaar dat ze de opleiding
+    die zij tot dan toe hebben gevolgd niet langer kunnen volgen. Het
+    laat zien dat de keuze voor de opleiding er voor de meesten van hen
+    niet een is geweest op basis van een lang gekoesterde wens.
+-   Voor studenten met een tussenjaar ligt dit genuanceerder. De helft
+    hen weet juist voor de deadline dat ze deze opleiding willen gaan
+    volgen; de andere helft besluit dit op een later moment, maar niet
+    zo laat als switchers.
+-   In 2020 en 2021 zien we een corona effect: in 2022 melden alle
+    studenten zich rond de deadline aan, terwijl in 2021 het aantal late
+    switchers hoog is. Waarschijnlijk wisten zij pas laat dat de studie
+    die zij volgden niet langer een optie was.
+
+\newpage
+
+![Aanmeldpatroon naar directe of indirecte
+instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig:plot_012.3}
+
+\newpage
+
+# Mogelijk vervolgonderzoek
+
+-   *Geografische spreiding van de instroom*. Dit onderdeel brengt in
+    kaart waar de studenten vandaan komen. Dit is nog niet klaar, maar
+    zal in een volgende versie worden meegenomen.
+-   *Uitval*. Welke patronen zien we in de uitval en kunnen we die
+    relateren in patronen in de instroom. Dit vervolgonderzoek is
+    inmiddels in de maak.
+-   *Wiskunde-eis*. De afschaffing van de wiskunde eis kan een effect
+    hebben op de instroom. Het zal interessant zijn dit nader te
+    onderzoeken.
+
+::: {#refs}
+# Referenties
+:::
+
+\newpage
+
+# Bijlage 1 - Activiteiten {.unnumbered}
+
+Voor dit onderzoek zijn de volgende activiteiten uitgevoerd:
+
+-   **Overleg met BAK-medewerker M&O**: met Monique Deleu, over het
+    vraagstuk en haar analyses tot nu toe.
+-   **Eerste verkenning van beschikbare data**:
+    -   Project Studiedata, team IR & Analytics, OKC
+    -   IR informatie over marktaandelen, team IR & Analytics, OKC
+    -   CRM informatie over deelname aan voorlichtingsactiviteiten en
+        conversie, Team Marketing & CRM, OKC
+    -   Publieke data van studiekeuzegids 1-2-3, de Vereniging
+        Hogescholen (ontwikkeling instroom overige B Communicatie
+        opleidingen) en DUO (stroominformatie)
+-   **Brainstormsessie met domeinexperts**: Monique Deleu (BAK, M&O),
+    Esterella de Roo, Anne Rosier en Ash Sewnandan (IR&A, OKC),
+    Stamatios Xanthoulis en Marianne van Veldhuisen (Marketing & CRM,
+    OKC), Theo Bakker (lectoraat Learning Technology & Analytics)
+-   **Overleg met leidinggevenden en stakeholders**: Harriet van Daal,
+    (manager faculteitsbureau), Pim Fernig (opleidingsmanager), Henk
+    Mastenbroek (docent van de opleiding).
+-   **Redactie**: Theo Bakker, Monique Deleu, reviews door Tessa
+    Verheydt en Kinga Krepa
+
+**Nog openstaande punten:**
+
+-   [ ] Jaartal van het opheffen van de schoolactiviteiten
+-   [ ] Gegevens van de opleiding B Bedrijfskunde voor 2018
