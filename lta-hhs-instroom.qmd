@@ -16,7 +16,7 @@ template: 00_Templates/eisvogel-lta.latex
 number-sections: true
 number-depth: 3
 listings: true
-output-file: lta-instroomanalyse-b-com_0.9.1.pdf
+output-file: lta-instroomanalyse-b-com_1.0.1.pdf
 
 ## Titlepage
 titlepage: true,
@@ -55,7 +55,7 @@ crossref:
 editor: visual
 
 # Document met variabelen voor dit document
-versie: 0.9.1
+versie: 1.0.1
 ---
 
 # Inleiding
@@ -118,23 +118,25 @@ Amsterdam, {{< meta date >}}
     instroom. Zie @fig-plot-001, @fig-plot-002 en @fig-plot-003.
 2.  **Regionale spreiding** - Kenmerkend is dat studenten voor deze
     opleiding overwegend uit de regio komen: te bereiken met het
-    openbaar vervoer in de spits in 45 minuten. In 2012 was dit nog uit Den Haag zelf, maar in 2021 is vrijwel niet meer het geval. Zie @fig-plot-spreiding-2012 en @fig-plot-spreiding-2021.
-7.  **Landelijke trends** - Landelijk is er sprake van een daling in het
+    openbaar vervoer in de spits in 45 minuten. In 2012 was dit nog uit
+    Den Haag zelf, maar in 2021 is vrijwel niet meer het geval. Zie
+    @fig-plot-spreiding-2012 en @fig-plot-spreiding-2021.
+3.  **Landelijke trends** - Landelijk is er sprake van een daling in het
     domein Economie en bij de B Communicatie voor voltijd eerstejaars
     studenten; het is nog onduidelijk of de B Communicatie van De HHs
     sterker daalt dan andere opleidingen. Dit lijkt vanuit interne
     cijfers wel het geval te zijn, maar dit is niet het geval volgens de
     VH-cijfers. Zie @fig-vh-001 en @fig-vh-002.
-3.  **Trend binnen M&O** - Er is een gelijke instroomtrend te zien bij 3
+4.  **Trend binnen M&O** - Er is een gelijke instroomtrend te zien bij 3
     andere opleidingen van de faculteit: B Human Resource Management, B
     Facility Management en B Bedrijfskunde. Zie @fig-plot-007.
-4.  **Vrouw-man verdeling** - Het aandeel mannen is al eerder gedaald
+5.  **Vrouw-man verdeling** - Het aandeel mannen is al eerder gedaald
     dan het aandeel vrouwen. De verhouding man/vrouw is varieert tussen
     de 25%/75% en 30%/70%. Zie @fig-plot-004 en @fig-plot-005.
-5.  **Vooropleiding** - Met name het aandeel instroom vanuit havo en mbo
+6.  **Vooropleiding** - Met name het aandeel instroom vanuit havo en mbo
     is sterk gedaald. De top 10 scholen zijn -- zowel in mbo als havo --
     drastisch gedaald. Zie @fig-plot-006 en @fig-plot-009-1.
-6.  **Conversie** - De conversie van geïnteresseerden voor de opleiding
+7.  **Conversie** - De conversie van geïnteresseerden voor de opleiding
     is zeer laag (2,8% vergeleken met 6% in de faculteit). Studenten
     kiezen nog breed en het kan zijn dat de keuze voor de opleiding een
     non-keuze is: uit onzekerheid. Dit zou kunnen leiden tot
@@ -176,7 +178,9 @@ conversie, voorlichting, scholenbezoek en interne concurrentie.
 3.  **Herstel het scholenbezoek** -- Het contact met de vooropleidingen
     lijkt sinds het afschaffen van de scholenbezoeken verbroken. Herstel
     van dit contact lijkt van cruciaal belang om de opleiding weer op de
-    kaart te zetten. Dat het contact met de nabije regio is verloren blijkt ook uit het spreidingsonderzoek. De instroom uit Den Haag in 2021 is vergeleken met 2012 minimaal.
+    kaart te zetten. Dat het contact met de nabije regio is verloren
+    blijkt ook uit het spreidingsonderzoek. De instroom uit Den Haag in
+    2021 is vergeleken met 2012 minimaal.
 4.  **Neem het curriculum onder de loep** -- De studenten krijgen veel
     tijd voor zelfstudie. Dit is voor de studenten die structuur nodig
     hebben lastig. Daarom het advies om het curriculum kritisch te
@@ -252,8 +256,8 @@ voorgaand jaar](02_Plots/mo-b_communicatie-p003.png){#fig-plot-003}
 
 Het toeleveringsgebied van de opleiding beperkt zich tot de nabije regio
 van de locatie Johanna Westerdijkplein: te bereiken met het openbaar
-vervoer in de spits in 45 minuten. De meeste studenten kwamen in 2012 nog uit de
-directe omgeving, maar in 2021 is dit niet langer het geval.
+vervoer in de spits in 45 minuten. De meeste studenten kwamen in 2012
+nog uit de directe omgeving, maar in 2021 is dit niet langer het geval.
 
 ![Spreidingsgebied B Communicatie \|
 2012](02_Plots/Instroom-B-Communicatie-2012.png){#fig-plot-spreiding-2012}
@@ -262,6 +266,10 @@ directe omgeving, maar in 2021 is dit niet langer het geval.
 
 ![Spreidingsgebied B Communicatie \|
 2021](02_Plots/Instroom-B-Communicatie-2021.png){#fig-plot-spreiding-2021}
+
+Een klein deel van de instroom komt van oorsprong van buiten de getoonde
+regio. In 2012 circa 10 studenten en in 2021 circa 5 studenten. Zie
+bijlage 1.
 
 \newpage
 
@@ -497,15 +505,22 @@ instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig-plot-012-3}
 # Mogelijk vervolgonderzoek
 
 -   *Uitval*. Welke patronen zien we in de uitval en kunnen we die
-    relateren in patronen in de instroom. Dit vervolgonderzoek is
-    inmiddels in de maak.
+    relateren aan patronen in de instroom. Dit vervolgonderzoek is
+    inmiddels in voorbereiding.
 -   *Wiskunde-eis*. De afschaffing van de wiskunde-eis kan een effect
     hebben op de instroom. Het zal interessant zijn dit nader te
     onderzoeken.
 
+# Versiegeschiedenis {.unnumbered}
+
+-   20-04-2023: versie 1.0 - eerste versie voor faculteit en opleiding
+-   16-05-2023: versie 1.0.1 - aanpassing layout en aanvulling met
+    analyses op regionale spreiding
+
 \newpage
 
 # Literatuur {.unnumbered}
+
 ::: {.content-visible when-format="pdf"}
 
 \printbibliography[heading=none]
@@ -514,7 +529,19 @@ instroom](02_Plots/mo-b_communicatie-p012.3.png){#fig-plot-012-3}
 
 \newpage
 
-# Bijlage 1 - Activiteiten {.unnumbered}
+# Bijlage 1 - Landelijke spreiding {.unnumbered}
+
+![Spreidingsgebied B Communicatie \| 2012
+(NL)](02_Plots/Instroom-B-Communicatie-NL-2012.png){#fig-plot-spreiding-NL-2012}
+
+\newpage
+
+![Spreidingsgebied B Communicatie \| 2021
+(NL)](02_Plots/Instroom-B-Communicatie-NL-2021.png){#fig-plot-spreiding-NL-2021}
+
+\newpage
+
+# Bijlage 2 - Activiteiten {.unnumbered}
 
 Voor dit onderzoek zijn de volgende activiteiten uitgevoerd:
 
