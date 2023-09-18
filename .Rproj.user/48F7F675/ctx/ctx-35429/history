@@ -1,0 +1,27 @@
+<img src="icon.png" align="right" height="110"/>
+<img src="icon.png" align="right" height="110"/>
+<img src="icon.png" align="right" height="110"/>
+---
+title: "Boxes with pandoc-latex-environment and awesomebox"
+cat("pandoc", as.character(pandoc_version()), "is available!\n")
+library(rmarkdown)
+if (pandoc_available())
+cat("pandoc", as.character(pandoc_version()), "is available!\n")
+install.packages("tinytex")
+library(markdown)
+library(markdown)
+detach("package:markdown", unload = TRUE)
+system("examples/boxes-with-pandoc-latex-environment-and-awesomebox/build.sh")
+renv::deactivate()
+system("reports/instroomanalyse/build.sh")
+system("reports/instroomanalyse/build.sh")
+print(paste("Amsterdam", format(Sys.time(), "%d %B, %Y"))
+print(paste("Amsterdam", format(Sys.time(), "%d %B, %Y")))
+?format
+print(paste("Amsterdam,", format(Sys.time(), "%d-%m-%Y")))
+print(paste("Amsterdam,", format(Sys.time(), "%d-%B-%Y")))
+print(paste("Amsterdam,", format(Sys.time(), "%d-%m-%Y")))
+#| echo: false
+paste("Amsterdam,", format(Sys.time(), "%d-%m-%Y"))
+#| echo: false
+paste("Amsterdam,", format(Sys.time(), "%d-%m-%Y"))

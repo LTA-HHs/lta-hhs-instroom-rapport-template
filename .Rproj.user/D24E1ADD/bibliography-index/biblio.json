@@ -1,0 +1,58 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "dropping-particle": "van",
+                    "family": "Berkel",
+                    "given": "H"
+                },
+                {
+                    "family": "Janssen",
+                    "given": "E"
+                },
+                {
+                    "family": "Bax",
+                    "given": "A"
+                }
+            ],
+            "id": "Berkel:2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "studiesucces",
+            "publisher": "Boom Lemma uitgevers",
+            "publisher-place": "Den Haag",
+            "title": "Studiesucces bevorderen: het kan en is niet moeilijk. Bewezen rendementsverbeteringen in het hoger onderwijs",
+            "title-short": "Studiesucces bevorderen: Het kan en is niet moeilijk.",
+            "type": "book"
+        },
+        {
+            "abstract": "Cognitive dissonance can be seen as an antecedent condition which leads to activity oriented toward dissonance reduction just as hunger leads to activity oriented toward hunger reduction. [This book] explores, in a wide variety of contexts, the consequences of the existence of cognitive dissonance and the attempts on the part of humans to reduce it. . . . This book explores contexts ranging from individual decision situations to mass phenomena. Since reduction of dissonance is a basic process in humans, it is not surprising that its manifestations may be observed in such a wide variety of contexts. (PsycINFO Database Record (c) 2016 APA, all rights reserved)",
+            "author": [
+                {
+                    "family": "Festinger",
+                    "given": "Leon"
+                }
+            ],
+            "collection-title": "A theory of cognitive dissonance.",
+            "id": "Festinger:1957",
+            "issued": {
+                "date-parts": [
+                    [
+                        1957
+                    ]
+                ]
+            },
+            "keyword": "Cognitive Dissonance",
+            "publisher": "Stanford University Press",
+            "title": "A theory of cognitive dissonance",
+            "type": "book"
+        }
+    ],
+    "project_biblios": []
+}

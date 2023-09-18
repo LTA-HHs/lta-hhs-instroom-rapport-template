@@ -1,0 +1,7 @@
+{
+    "installOptions": {
+        "installFromRepository": true,
+        "libraryPath": "/Users/theobakker/ownCloud - Theo Bakker@hhs.data.surfsara.nl/LTA-HHS (Projectfolder)/01 LTA Research/Reporting/hhs-reports/renv/library/R-4.2/aarch64-apple-darwin20",
+        "installDependencies": true
+    }
+}
