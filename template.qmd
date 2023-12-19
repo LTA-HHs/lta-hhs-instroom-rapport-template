@@ -12,26 +12,25 @@ versie: 1.0.0
 
 # Inleiding
 
-NB Dit is een template: vervang {opleiding}, {track},
-{opleiding_lcase}, {faculteit.} De inleiding bevindt zich in het
-document \_quarto.yml. Variabelen komen in \_variables.yml
+NB Dit is een template: vervang {opleiding}, {track}, {opleiding_lcase},
+{faculteit.} De inleiding bevindt zich in het document \_quarto.yml.
+Variabelen komen in \_variables.yml
 
 ## Het vraagstuk: dalende instroom
 
-Op verzoek van de opleidingsmanager van de B {opleiding} ({track})
-van De HHs heeft het lectoraat Learning Technology & Analytics een
-analyse uitgevoerd op de instroom. Sinds 2012 is de instroom van de
-opleiding namelijk sterk afgenomen (met xx%) en de faculteit en de
-opleiding willen het tij keren.
+Op verzoek van de opleidingsmanager van de B {opleiding} ({track}) van
+De HHs heeft het lectoraat Learning Technology & Analytics een analyse
+uitgevoerd op de instroom. Sinds 2012 is de instroom van de opleiding
+namelijk sterk afgenomen (met xx%) en de faculteit en de opleiding
+willen het tij keren.
 
 ## Verantwoording
 
 Dit onderzoek is uitgevoerd door Theo Bakker, lector Learning Technology
-& Analytics, en {naam}, {functie}. Voor dit onderzoek is de
-analyseset van het project Studiedata gebruikt van het team IR &
-Analytics van OKC. Daarnaast is de landelijke data van de Vereniging
-Hogescholen onderzocht voor een vergelijking met andere opleidingen in
-Nederland.
+& Analytics, en {naam}, {functie}. Voor dit onderzoek is de analyseset
+van het project Studiedata gebruikt van het team IR & Analytics van OKC.
+Daarnaast is de landelijke data van de Vereniging Hogescholen onderzocht
+voor een vergelijking met andere opleidingen in Nederland.
 
 ## Selecties
 
@@ -195,19 +194,19 @@ van dit rapport.*
 ## Algemeen beeld instroom
 
 ![Ontwikkeling instroom in aantallen
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p001_aantallen_per_jaar.png){#fig-plot-001}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p001_aantallen_per_jaar.png){#fig-plot-001}
 
 \newpage
 
 ![Ontwikkeling instroom in percentages per jaar vergeleken met het
 eerste jaar
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p002_percentage_verschil_eerste_jaar.png){#fig-plot-002}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p002_percentage_verschil_eerste_jaar.png){#fig-plot-002}
 
 \newpage
 
 ![Ontwikkeling instroom in percentages per jaar vergeleken met het
 voorgaand jaar
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p003_percentage_verschil_vorig_jaar.png){#fig-plot-003}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p003_percentage_verschil_vorig_jaar.png){#fig-plot-003}
 
 \newpage
 
@@ -270,26 +269,26 @@ ongewogen](02_Plots/OKC/marktaandelen_CMD_cropped.png){fig-align="center"}
 ## Facultaire ontwikkelingen
 
 ![Ontwikkeling instroom alle opleidingen
-ITD](02_Plots/plots/{fac_opleiding_lowercase}_p007_instroom_opleidingen_faculteit_per_jaar.png){#fig-plot-007}
+ITD](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p007_instroom_opleidingen_faculteit_per_jaar.png){#fig-plot-007}
 
 \newpage
 
 ## Ontwikkeling naar geslacht
 
 ![Ontwikkeling instroom in aantallen per geslacht
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p004_aantallen_geslacht_per_jaar.png){#fig-plot-004-cmd}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p004_aantallen_geslacht_per_jaar.png){#fig-plot-004-cmd}
 
 \newpage
 
 ![Ontwikkeling instroom in percentages per geslacht
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p005_1_percentage_geslacht_per_jaar.png){#fig-plot-005-1-cmd}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p005_1_percentage_geslacht_per_jaar.png){#fig-plot-005-1-cmd}
 
 \newpage
 
 ## Ontwikkeling naar vooropleiding
 
 ![Ontwikkeling instroom naar vooropleiding
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p006_vooropleiding_2012_2021.png){#fig-plot-006-cmd}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p006_vooropleiding_2012_2021.png){#fig-plot-006-cmd}
 
 \newpage
 
@@ -302,12 +301,12 @@ ITD](02_Plots/plots/{fac_opleiding_lowercase}_p007_instroom_opleidingen_facultei
 ## Ontwikkeling naar directe of indirecte instroom
 
 ![Ontwikkeling directe en indirecte instroom in aantallen
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p011_1_aansluiting_aantal_per_jaar.png){#fig-plot-011-1-cmd}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p011_1_aansluiting_aantal_per_jaar.png){#fig-plot-011-1-cmd}
 
 \newpage
 
 ![Ontwikkeling directe en indirecte instroom in percentages
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p011_2_aansluiting_percentage_per_jaar.png){#fig-plot-011-2-cmd}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p011_2_aansluiting_percentage_per_jaar.png){#fig-plot-011-2-cmd}
 
 \newpage
 
@@ -324,49 +323,49 @@ ITD](02_Plots/plots/{fac_opleiding_lowercase}_p007_instroom_opleidingen_facultei
 ### Aanmeldpatronen naar geslacht
 
 ![Aanmeldpatroon naar
-geslacht](02_Plots/plots/{fac_opleiding_lowercase}_p012_1_2_aanmelding_geslacht_per_jaar.png){#fig-plot-012-1-2}
+geslacht](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p012_1_2_aanmelding_geslacht_per_jaar.png){#fig-plot-012-1-2}
 
 \newpage
 
 ### Aanmeldpatronen naar toelaatgevende vooropleiding
 
 ![Aanmeldpatroon naar
-vooropleiding](02_Plots/plots/{fac_opleiding_lowercase}_p012_2_2_mbo_havo_aanmelding_vooropleiding_per_jaar.png){#fig-plot-012-2-2}
+vooropleiding](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p012_2_2_mbo_havo_aanmelding_vooropleiding_per_jaar.png){#fig-plot-012-2-2}
 
 \newpage
 
 ### Aanmeldpatronen naar directe of indirecte instroom
 
 ![Aanmeldpatroon naar directe of indirecte
-instroom](02_Plots/plots/{fac_opleiding_lowercase}_p012_3_2_aanmelding_aansluiting_per_jaar.png){#fig-plot-012-3-2}
+instroom](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p012_3_2_aanmelding_aansluiting_per_jaar.png){#fig-plot-012-3-2}
 
 \newpage
 
 ## Correlaties
 
 ![Correlatie leeftijd, vooropleiding en reistijd
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p010_1_mbo_havo_leeftijd_reistijd_havo_mbo.png){#fig-plot-010-1}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p010_1_mbo_havo_leeftijd_reistijd_havo_mbo.png){#fig-plot-010-1}
 
 \newpage
 
 ![Correlatie leeftijd, vooropleiding en gemiddeld eindexamencijfer
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p010_2_havo_leeftijd_eindcijfer_havo.png){#fig-plot-010-2}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p010_2_havo_leeftijd_eindcijfer_havo.png){#fig-plot-010-2}
 
 \newpage
 
 ![Correlatie vooropleiding, reistijd en gemiddeld eindexamencijfer
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p010_3_havo_eindcijfer_reistijd_havo.png){#fig-plot-010-3}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p010_3_havo_eindcijfer_reistijd_havo.png){#fig-plot-010-3}
 
 \newpage
 
 ![Correlatie vooropleiding, datum aanmelding en gemiddeld
 eindexamencijfer
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p010_4_1_havo_aanmelddatum_eindcijfer_havo.png){#fig-plot-010-4-1}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p010_4_1_havo_aanmelddatum_eindcijfer_havo.png){#fig-plot-010-4-1}
 
 \newpage
 
 ![Correlatie geslacht, datum aanmelding en gemiddeld eindexamencijfer
-(CMD)](02_Plots/plots/{fac_opleiding_lowercase}_p010_4_2_aanmelddatum_eindcijfer_geslacht.png){#fig-plot-010-4-2}
+(CMD)](02_Plots/plots/%7Bfac_opleiding_lowercase%7D_p010_4_2_aanmelddatum_eindcijfer_geslacht.png){#fig-plot-010-4-2}
 
 \newpage
 
