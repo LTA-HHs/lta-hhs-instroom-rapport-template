@@ -1,24 +1,14 @@
-# Lta-hhs-instroom-template Format
+# Lta-hhs-instroom-template format
 
-## Installing
+## Installeren
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
+Voer onderstaande code uit in de terminal van je mac.
 
 ```bash
-quarto use template lta-hhs/lta-hhs-instroom-template
+cd Dropbox/Github/Git\ HHs/LTA_Test/
+quarto use template LTA-HHs/lta-hhs-instroom-rapport-template
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+Dit installeert de extensie en maakt een voorbeeld qmd-bestand dat je kunt gebruiken als startpunt voor je rapport.
 
-## Using
-
-*TODO*: Describe how to use your format.
-
-## Format Options
-
-*TODO*: If your format has options that can be set via document metadata, describe them.
-
-## Example
-
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
 
