@@ -1,6 +1,0 @@
-"0","#| echo: false"
-"0","paste(""Amsterdam,"", format(Sys.time(), ""%d-%m-%Y""))"
-"1","[1]"
-"1"," ""Amsterdam, 15-05-2023"""
-"1","
-"

@@ -1,0 +1,69 @@
+author: "Lectoraat Learning Technology & Analytics, De HHs"
+keywords: [De HHs, De Staat van De Haagse, Instroomanalyse]
+lang: nl
+date: last-modified
+date-format: "DD-MM-YYYY"
+
+## Format en output
+format:
+  pdf: default
+cite-method: biblatex
+template: 00_Templates/eisvogel-lta.latex
+number-sections: true
+number-depth: 3
+listings: true
+
+## Titlepage
+titlepage: true
+titlepage-rule-color: 'FFFFFF'
+titlepage-text-color: '223343'
+titlepage-title-color: '223343'
+titlepage-subtitle-color: '9EA700'
+titlepage-footer-color: 'FFFFFF'
+titlepage-background: "01_Backgrounds/LTA-wood-annual-rings-compressed.pdf"
+liftfooter: true
+
+## Toc
+toc: true
+toc-depth: 2
+toc-own-page: true
+
+## Tables en callouts
+table-use-row-colors: false
+callout-appearance: simple
+
+## Footnotes en literatuur
+footnotes-pretty: true
+## link-citations: true
+## bibliography: lta-bibliography-instroom.bib
+## biblio-title: "Literatuur"
+## biblio-style: apa
+## citeproc: false
+
+## Links en cross referenties
+colorlinks: true
+crossref:
+  fig-title: Figuur    # (default is "Figure")
+  tbl-title: Tabel     # (default is "Table")
+  ref-hyperlink: true  # (default is true)
+
+## editor
+editor: visual
+
+## latex packages
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{xcolor}
+- \usepackage{graphicx}
